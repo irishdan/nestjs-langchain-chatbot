@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "docker:up": {
+      "cache": false
+    },
+    "prisma:migrate": {
+      "cache": false,
+      "dependsOn": ["docker:up"]
+    },
+    "prisma:generate": {
+      "dependsOn": ["prisma:migrate"],
+      "cache": false
+    },
+    "dev": {
+      "dependsOn": ["prisma:generate"],
+      "cache": false
+    },
+    "type-check": {
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["type-check"],
+      "outputs": ["dist/**"]
+    }
+  }
+}

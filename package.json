@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-langchain-chatbot",
+  "version": "0.0.1",
+  "description": "A simple chatbot with NestJS and LangChain. NestJs API with react frontend",
+  "author": "danbyrne",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "turbo": "^1.10.13"
+  },
+  "scripts": {
+    "dev": "turbo dev"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
