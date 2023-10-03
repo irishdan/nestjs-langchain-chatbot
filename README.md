@@ -14,7 +14,7 @@ yarn install
 yarn dev
 ```
 
-The React client should now be available at http://localhost:5174/
+The React client should now be available at http://localhost:5173/
 
 ## CLI
 
